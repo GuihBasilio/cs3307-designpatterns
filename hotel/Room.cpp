@@ -11,5 +11,7 @@ class Room{
 			
 		public:
 			bool isReserved(){
+				        cout << " Room class accessed. Checking to see if it is reserved. Returning false" << endl;
+				
 			}		
 };

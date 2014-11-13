@@ -11,7 +11,13 @@ class MyApllication: public Application{
 		
 		Room ReserveRoom(250, "150"){
 			cout << "   MyApplication: ReserveRoom()" << endl;
+			cout << "MyApplication: ReserveRoom()" << endl;
+        	Reservation ReservationHelper;
+        	ReservationHelper.makeReservation();
+        	ReservationHelper.changeRooms();
+        	ReservationHelper.modifyDays();
+        	ReservationHelper.cancelReservation();
+        	return DeluxeQueen();
 
-			return new DeluxeQueen();
 		};
 };
